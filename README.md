@@ -1,7 +1,7 @@
 ## 🌦️ ClimatiQ
 ClimatiQ is a sleek and intuitive weather web app built using HTML, CSS, and JavaScript. It allows users to explore weather conditions across the globe by simply searching for a country or location. The app displays real-time weather data along with a 5-day forecast, helping users stay informed about the climate wherever they go.
 
-### 🌍 Features
+## 🌍 Features
    - 🔍 Search any country or city to get weather updates
 
   - 📍 Interactive map to visualize locations using Mapbox
@@ -14,7 +14,7 @@ ClimatiQ is a sleek and intuitive weather web app built using HTML, CSS, and Jav
 
  -  🌐 Clean, responsive UI that works across devices
 
-### 🛠️ Tech Stack
+## 🛠️ Tech Stack
 Frontend: HTML, CSS, JavaScript
 
 APIs Used:
@@ -25,32 +25,32 @@ APIs Used:
 
 🖼️ Unsplash API – for dynamic background images
 
-### 🚀 Getting Started
+## 🚀 Getting Started
 
-- #### Clone the repository
+- ### Clone the repository
 
 ```bash
 git clone https://github.com/yourusername/climatiq.git
 ```
-- #### Navigate into the project folder
+- ### Navigate into the project folder
 
 ```bash
 cd climatiq
 ```
-- #### Open index.html in your browser
+- ### Open index.html in your browser
 
 ```bash 
 open index.html
 ``` 
 or simply double-click the file.
 
-#### ⚠️ Make sure to add your own API keys in the respective places for Mapbox, OpenWeatherMap, and Unsplash.
+### ⚠️ Make sure to add your own API keys in the respective places for Mapbox, OpenWeatherMap, and Unsplash.
 
-### 📸 Screenshots
+## 📸 Screenshots
 
 ![ClimatiQ](https://github.com/user-attachments/assets/e50a3137-f5de-423d-b810-545c6ebd0b60)
 
-### 📌 Future Improvements
+## 📌 Future Improvements
 - Add hourly weather breakdown
 
 - Support for multiple languages
@@ -58,7 +58,7 @@ or simply double-click the file.
 - Dark mode toggle
 
 
-### 🙌 Acknowledgements
+## 🙌 Acknowledgements
 - OpenWeatherMap
 
 - Mapbox
