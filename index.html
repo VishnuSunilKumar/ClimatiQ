@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climatiq | Modern Weather App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Left Navigation Bar -->
+        <nav class="sidebar-nav">
+            <div class="nav-brand">
+                <i class="fas fa-cloud-sun"></i>
+                <span>Climatiq</span>
+            </div>
+            
+            <div class="nav-search">
+                <div class="search-container">
+                    <input type="text" id="locationSearch" placeholder="Search location...">
+                    <button id="searchButton"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+            
+            <div class="quick-locations">
+                <h3>Quick Locations</h3>
+                <ul>
+                    <li data-city="New York"><i class="fas fa-building"></i> New York</li>
+                    <li data-city="London"><i class="fas fa-landmark"></i> London</li>
+                    <li data-city="Tokyo"><i class="fas fa-torii-gate"></i> Tokyo</li>
+                    <li data-city="Paris"><i class="fas fa-monument"></i> Paris</li>
+                    <li data-city="Dubai"><i class="fas fa-mosque"></i> Dubai</li>
+                </ul>
+            </div>
+            
+            <div class="user-location">
+                <button id="myLocation"><i class="fas fa-location-arrow"></i> My Location</button>
+            </div>
+            
+            <div class="nav-footer">
+                <div class="unit-toggle">
+                    <span class="active" id="celsiusBtn">°C</span>
+                    <span id="fahrenheitBtn">°F</span>
+                </div>
+                <div class="app-info">
+                    <p>Climatiq Weather</p>
+                    <p>v1.0.0</p>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content Area -->
+        <main class="content-area">
+            <!-- Dynamic Background -->
+            <div class="location-background" id="locationBackground"></div>
+            
+            <!-- Weather Display -->
+            <div class="weather-display">
+                <div class="weather-card">
+                    <div class="location-info">
+                        <h1 id="currentLocation">Detecting your location...</h1>
+                        <p id="currentDate" class="date-time"></p>
+                    </div>
+                    
+                    <div class="weather-primary">
+                        <div class="temperature-container">
+                            <div class="temperature">
+                                <span id="currentTemp">--</span>
+                                <span class="temp-unit">°C</span>
+                            </div>
+                            <div class="weather-condition">
+                                <img id="weatherIcon" src="" alt="Weather Icon">
+                                <p id="weatherDesc">--</p>
+                            </div>
+                        </div>
+                        
+                        <div class="weather-details">
+                            <div class="detail-item">
+                                <i class="fas fa-temperature-low"></i>
+                                <div>
+                                    <span>Feels Like</span>
+                                    <span id="feelsLike">--°</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-tint"></i>
+                                <div>
+                                    <span>Humidity</span>
+                                    <span id="humidity">--%</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-wind"></i>
+                                <div>
+                                    <span>Wind</span>
+                                    <span id="windSpeed">-- km/h</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-compress-arrows-alt"></i>
+                                <div>
+                                    <span>Pressure</span>
+                                    <span id="pressure">-- hPa</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Map Section -->
+                <div class="map-container">
+                    <div id="weatherMap"></div>
+                    <div class="map-overlay">
+                        <p><i class="fas fa-hand-pointer"></i> Click anywhere on the map to view weather</p>
+                    </div>
+                </div>
+                
+                <!-- Forecast Section -->
+                <div class="forecast-container">
+                    <h2>5-Day Forecast</h2>
+                    <div class="forecast-items" id="forecastItems">
+                        <!-- Dynamically populated -->
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="scripts/app.js"></script>
+</body>
+</html>
