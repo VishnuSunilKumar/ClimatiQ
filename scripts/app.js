@@ -1,5 +1,5 @@
 // API Keys (Replace with your own keys)
-const WEATHER_API_KEY = "fbb9c502b9e29d0e1a3227d688b3ee81";
+const WEATHER_API_KEY = "3095a81999f3e9494bab058f44bdadd6";
 const MAPBOX_API_KEY = "pk.eyJ1IjoiZmx6aCIsImEiOiJjbWI5ZmJibXUwZXljMmpxdXBlY2Z1OWoyIn0.6Gd9Fl3Bh51nqJ3rywx4Xg";
 const UNSPLASH_API_KEY = "5RHNYizHXV_i5Kh_4xjZK0_Cwhtgm1Ov1dasLIVK6J8";
 
