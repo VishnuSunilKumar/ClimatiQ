@@ -30,7 +30,7 @@ APIs Used:
 - ### Clone the repository
 
 ```bash
-git clone https://github.com/VishnuSunilKumar/climatiq.git
+git clone https://github.com/VishnuSunilKumar/ClimatiQ.git
 ```
 - ### Navigate into the project folder
 
